@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <center>
+            <title>My Family Book</title>
+            <h1>My Family Book</h1><img src="Family_Book.jpg" id="Family_member_image"><h4 id="Family_member_name"></h4>
+            <h3></h3>
+            <button onClick="update()">Next person</button>
+        </center>
+    </head>
+    <script>
+   var Images = ["Grandfather.png","Grandmotherjpg","Father.png","Mother.jpg","Devansh.Jpg"]
+   var Names = ["Giridhari Lal Dhar","Subhashni Dhar","Suneet Dhar","Alka Dhar","Devansh Dhar"]
+   var Index = 0
+   function update(){Index++; var Numbers = 5; if (Index>Numbers){Index=0}; var UpdatedImage = Images[Index]; var UpdatedName = Names[Index]; document.getElementById("Family_member_image").src=UpdatedImage; document.getElementById("Family_member_name").innerHTML=UpdatedName;}
+
+
+  
+    </script>
+</html>
